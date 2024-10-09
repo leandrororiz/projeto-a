@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Básico</title>
+    <!-- CSS no head-->
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        h1{
+            color: navy;
+            margin-left: 20px;
+        }
+    </style>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- CSS inline-->
+    <p style="color: green; font-size: 14px;">
+        Este parágrafo será exibido em verde e com tamanho de fonte 14px.
+    </p>
+
+    <!-- CSS no head-->
+    <h1>Este é um Título com CSS Interno</h1>
+    <p>Este parágrafo está em uma página com fundo azul claro.</p>
+
+    <!-- CSS externo-->
+    <h2>Bem-vindo á Minha Página</h2>
+    <h3>
+        Este é um exemplo de como ultilizar CSS Externo para estilizar sua página.
+    </h3>
+    <a href="https://www.google.com">Visite o Google</a>
+
+    <!-- Propriedades de fonte-->
+    <p class="fonte-family">Este texto utiliza a fonte Courier New</p>
+
+    <p class="fonte-temanho">
+        Este texto tem um tamanho de fonte de 20 pixels.
+    </p>
+
+    <p class="fonte-peso">Este texto tem uma espessura de fonte 600.</p>
+
+    <p class="fonte-estilo">Este texto é exibido em itálico.</p>
+
+    <p class="texto-cor">Este texto é exibido em cor azul.</p>
+
+    <p class="texto-centralizado">Este texto é centralizado.</p>
+
+    <p class="texto-sublinhado">Este texto é sublinhado.</p>
+
+    <p class="texto-maiusculas">Este texto é transformado em maiúsculas.</p>
+
+    <p class="sombra-texto">
+        Este texto possui sombra, adicionando profundidade.
+    </p>
+
+    <p class="espacamento-letras">Espaçamento personalizado entre letras.</p>
+
+    <p class="espacameto-palavras">Espaçamento aumentado entre palavras.</p>
+
+    <!-- Seletor de tipo/tag -->
+    <ul>
+        <li>Item 1</li>
+        <li>Iten 2</li>
+    </ul>
+
+    <!-- Este exemplo é de um recurso mais avançado, que veremos ao longo do ebook-->
+    <div class="cabecalho-sticky">Cabeçalho Sticky</div>
+
+    <!-- Seletor por classe-->
+    <p class="destaque">Este parágrafo será destacado.</p>
+
+    <p>Este parágrafo nâo será destacado.</p>
+    
+    <p class="destaque">Este parágrafo será destacado</p>
+
+    <p class="texto-grande texto-azul">Este parágrafo será grande e azul.</p>
+
+    <!-- Seletores de id-->
+    <h1 id="cabecalho-principal">Bem-vindo ao Meu Site </h1>
+
+    <!-- Seletor por atributo-->
+    <input type="text" placeholder="Campo de texto com borda azul">
+
+    <div>
+        <a href="http://example.com">Link Externo (http)</a><br />
+        <a href="https://example.com">Link Externo (https)</a><br />
+        <a href="/internal-link">Link Interno</a>
+    </div>
+
+    <div data-status="ativo">Este div será ativo e tem um fundo verde</div>
+    <div data-status="inativo">
+        Esta div será inativo e não tem um fundo verde.
+    </div>
+
+    <!-- Especifidade -->
+    <h4 style="color: green;" class="special-header">Olá, Mundo!</h4>
+
+    <!-- Important -->
+    <p class="texto-azul texto-azul-important">
+        Este texto deve ser azul, maos com o !important vira vermelho.
+    </p>
+
+    <!-- Unidades absolutas-->
+    <p class="paragrafo-absoluto">Texto com tamanho absoluto em pixels.</p>
+
+    <p class="paragrafo-ponto">
+        Texto com tamanho em pontos, adqueado para documentos impressos.
+    </p>
+
+    <div class="caixa-polegada"> Caixa de 2 polegadas por 1 polegada</div>
+
+    <div class="caixa-centimetro">Caixa de 5cm por 2 cm</div>
+
+    <div class="caixa-milimetro">Caixa de 50mm por 20mm</div>
+
+    <div class="container">
+        <p class="texto-em">
+            Este texto é 1.5 vezes maior que o tamanho da fonte do seu elemento pai. 
+        </p>
+    </div>
+
+    <p class="texto-rem">
+        Este texto é 2 vezes maior que o tamanho da fonte do elemento raiz.
+    </p>
+
+    <div class="conteiner">
+        <div class="caixa-percentual">
+            Esta caixa ocupa 50% da largura do seu contêiner.
+        </div>
+    </div>
+
+    <div class="div-vh">Esta div ocupa 50% da altura da viewport.</div>
+
+    <div class="div-vw">Esta div ocupa 80% da altura da viewport.</div>
+
+    <!-- RBG, HEX, HSL-->
+    <div class="cor-rbg">
+        Texto em vermelho com fundo azul semi-transparente.
+    </div>
+
+    <div class="cor-hex">Texto em verde com fundo vermelho.</div>
+
+    <div class="cor-hsl">
+        Texto em verde escuro com fundo azul semi=tranparente.
+    </div>
+
+    <!-- Imagens de Fundo: Inserçâo e Controle em CSS -->
+    <div class="fundo-imagem"></div>
+
+    <div class="fundo-tamanho"></div>
+
+    <div class="fundo-posicao"></div>
+
+    <div class="fundo-repetir"></div>
+
+    <!-- Box Model -->
+    <div class="caixa"></div>
+
+    <div class="container">
+        <div class="caixa-relativa">Conteúdo</div>
+    </div>
+
+    <div class="espaco-uniforme"></div>
+
+    <div class="margen-topo">Margem apenas no topo.</div>
+    <div class="margen-direita">Margen apenas á direita.</div>
+    <div class="maregen-baixo">Margem apenas embaixo.</div>
+    <div class="margen-esquerda">Mergem apenas á esquerda.</div>
+
+    <div class="maegem-colapso">Primeiro Elemento com Margen Inferior</div>
+    <div class="margen-colapso">
+        Segundo Elemento com Margen Superior (Colapso)
+    </div>
+    <div class="margen-negativa">Elemento com Margen Negativa Superior</div>
+
+    <div class="borda-simples">Este elemento tem uma borda sólida azul.</div>
+
+    <div class="borda-individual">
+        Cada borda deste elemento tem um estilo diferente.
+    </div>
+
+    <div class="borda-arredondada">Este elementos tem bordas arrerdondadas.</div>
+
+    <div class="borda-efeito"></div>
+
+    <div class="caixa-padding">Conteúdo com padding uniforme.</div>
+
+    <div class="paddinf-individual">Conteúdo com padding individual.</div>
+
+    <div class="padding-relativo">Conteúdo com padding relativo.</div>
+
+    <!-- Comportamento de Exibiçâo dos Elementos com Display-->
+    div
+
+
+
+</body>
+</html>
